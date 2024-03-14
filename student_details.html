@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Developer Stack</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="stylesheet" href="navbar1.css" /> -->
+	
+	<style>
+		.nav {
+  height: 60px;
+  width: 100%;
+  background-color: #3482B5;
+  position: relative; 
+}
+
+.logo
+{
+height: 50px;
+width:50px;
+}
+	
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  
+}
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+<!--  footer style  -->
+.footer-main{
+    padding-top: 90px;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+<!--   table -->
+table, th, td {
+	border: 1px solid black;
+  	border-collapse: collapse;
+}
+th, td {
+  	padding: 10px;
+	
+}
+th {
+  	background-color: #FFB500;
+  	font-size: 20px;
+}
+td {
+  	background-color: #FDDF95;
+}
+.center {
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+	</style>
+  </head>
+  <body>
+  <!--  HEADER--->
+  <header>
+  <div class="nav">
+  
+	 <div class="nav-header">
+	<img class="logo" src="logo1.png"/>
+		<div class="nav-title">
+		Developer Stack Student Management
+		</div>
+	  </div>
+  </div>
+  </header>
+  <!--  Nav Bar--->
+  <div class="nav">
+	  <div class="nav-links">
+		<a href="student_home.html" target="_blank">Home</a>
+		<a href="student_details.html" target="_blank">Students Details </a>
+		<a href="student_registration.html" target="_blank">Students Registration</a>
+		<a href="student_blogs.html" target="_blank">Blog</a>
+		<a href="student_contact_us.html" target="_blank">Contact us</a>
+		 <a href="login.html" target="_blank">Login</a>
+	  </div>
+	</div>
+	<!--Details Table  -->
+<h2><center>Students Records</h2>
+
+<table class="center">
+	<colgroup>
+		<col>
+		<col>
+		<col style="width:auto">
+	</colgroup>
+	<tr>
+		<th>StudentID</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Gender</th>
+		<th>Grade</th>
+		<th>BirthDate</th>		
+  		<th>Address</th>
+	</tr>
+	<tr>
+		<td>STU001</td>
+		<td>Captain</td>
+  		<td>Miller</td>
+		<td>Male</td>
+		<td>10A</td>
+		<td>19/03/1999</td>
+		<td>Colombo</td>
+  	</tr>
+  	<tr>
+  		<td>STU002</td>
+  		<td>Siva</td>
+  		<td>Kumar</td>
+		<td>Male</td>
+		<td>10C</td>
+		<td>24/04/1994</td>
+		<td>Jaffna</td>
+  	</tr>
+  	<tr>
+  		<td>STU003</td>
+  		<td>Priyan</td>
+  		<td>Varman</td>
+		<td>Male</td>
+		<td>10A</td>
+		<td>27/12/1997</td>
+		<td>Kopay</td>
+  	</tr>
+	<tr>
+		<td>STU004</td>
+		<td>Nadesh</td>
+  		<td>Kinch</td>
+		<td>Male</td>
+		<td>10B</td>
+		<td>05/03/2000</td>
+		<td>Hatton</td>
+  	</tr>
+	<tr>
+		<td>STU005</td>
+		<td>Ram</td>
+  		<td>Karthee</td>
+		<td>Male</td>
+		<td>10C</td>
+		<td>29/08/1995</td>
+		<td>Kondavil</td>
+  	</tr>
+	<tr>
+		<td>STU006</td>
+		<td>Ano</td>
+  		<td>Puru</td>
+		<td>Female</td>
+		<td>10B</td>
+		<td>12/05/1996</td>
+		<td>Galle</td>
+  	</tr>
+	<tr>
+		<td>STU007</td>
+		<td>Nanthu</td>
+  		<td>Varma</td>
+		<td>Male</td>
+		<td>10A</td>
+		<td>10/02/1993</td>
+		<td>Colombo</td>
+  	</tr>
+	<tr>
+		<td>STU008</td>
+		<td>Kavya</td>
+  		<td>Mohan</td>
+		<td>Female</td>
+		<td>10C</td>
+		<td>03/10/2002</td>
+		<td>Trinco</td>
+  	</tr>
+</table>
+
+
+
+<!-- Copyright -->
+<footer class="footer-main fixed-bottom bg-dark text-center text-white">
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	Developed by Thayuran © 2024 All Rights Reserved.
+	</div>
+</footer>
+
+  </body>
+</html>
